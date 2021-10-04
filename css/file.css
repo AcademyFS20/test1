@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@600&display=swap');
+
 *, ::before, ::after {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 html {
@@ -8,40 +10,94 @@ html {
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f1f1f1;
+    color:#e4dede;
+    
 }
+     
+
+
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
+    
     width: 300px;
     height: 100vh;
     min-height: 800px;
-    background: #333;
-    position: fixed;
-    top: 0;
-    left: -300px;
-    border-right: 1px dashed #f1f1f1;
+    background: rgb(7,7, 7);
+     position: fixed; 
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center; 
+    align-content:space-between;
+    top: 0px;
+    left: 0px;
     z-index: 5;
     transition: all 0.2s ease-in-out;
+    font-family:  sans-serif;
+}
+.nav-gauche a 
+{ 
+    text-decoration: none;
+}
+
+.nav-gauche a::after {
+content:"";
+background-color: rgb(145, 133, 145);
+width:0;
+height: 3px;
+display:block;
+margin: 10px  auto;
+
+}
+.nav-gauche a:hover::after
+{
+    width:100%;
+}
+.nav-gauche a::before {
+    content:"";
+    background-color:rgb(145, 133, 145);
+    width: 0;
+    height:3px;
+    display: block;
+    margin: 10px auto;
+}
+.nav-gauche a:hover::before
+{
+    width: 100%;
+}
+
+
+.cercle-portrait img{
+
+    width: 100px;
+    height: 100px;
 }
 
 
 /************************ HOME SECTION **********************/
 .accueil {
-    background: url(ressources/accueil.jpg);
-    background-repeat: no-repeat;
+    background-image:url('../img/back.jpeg');
+    /* background: url(ressources/accueil.jpg); */
+    background-repeat:no-repeat;
     background-size: cover;
-    background-position: right;
-    height: 100vh;
+    background-position: center;
+    height: 200px;
     min-height: 900px;
+    margin-top:-100px;
     width: calc(100% - 300px);
     margin-left: auto;
-    position: relative;
+    position:relative;
+    
+    
 }
 h1 {
     font-size: 90px;
-    font-family: 'Abril Fatface', sans-serif;
-    margin: 0 60px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:60px;
     padding-top: 210px;
+
+  
 }
 .txt-animation {
     font-size: 30px;
@@ -90,7 +146,10 @@ h1 {
     border: 2px solid #333;
 }
 .icone-medias {
-    width: 30px;
+    width: 60px;
+    display:flex;
+    justify-content: space-around;
+
 }
 .btn-rond {
     width: 70px;
