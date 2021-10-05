@@ -1,0 +1,42 @@
+.burger{
+border-radius: 50%;
+width: 50px;
+height: 50px;
+z-index:1px;
+/* position:absolute; */
+/* top:0px;
+left:0px; */
+background-color: rgb(243, 243, 223);
+}
+.bar1{
+    width:90%;
+    height:4px;
+    background-color: rgb(12, 12, 12);
+    position:relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   
+ }
+  
+  .bar1::before {
+    content:"";
+    background-color: rgb(41, 221, 101);
+    width:90%;
+    height: 4px;
+    /* display:block; */
+    position: absolute;
+    top:-120%;
+   
+    
+  }
+  .bar1::after {
+    content:"";
+    background-color: rgb(69, 59, 212);
+    width:90%;
+    height: 4px;
+    /* display:block; */
+    position:absolute; 
+    top: 120%;
+   
+  }  
