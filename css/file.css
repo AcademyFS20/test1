@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap');
 *, ::before, ::after {
     box-sizing: border-box;
     margin:0;
@@ -21,28 +22,39 @@ body {
     
     width: 300px;
     height: 100vh;
-    min-height: 800px;
-    background: rgb(7,7, 7);
-     position: fixed; 
+    min-height: 860px;
+    background: rgb(5, 5, 5);
+    position:fixed;
+    top:0;
+    left:0;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
     align-items:center; 
     align-content:space-between;
-    top: 0px;
-    left: 0px;
-    z-index: 5;
+    z-index:10;
     transition: all 0.2s ease-in-out;
     font-family:  sans-serif;
+    
+}
+.nav-gauche  img {
+    width: 70px;
+    height: 70px;
+    
+
+
 }
 .nav-gauche a 
 { 
     text-decoration: none;
+    color:#2D5C2A;
+    font-family: 'Acme', sans-serif;
+
 }
 
 .nav-gauche a::after {
 content:"";
-background-color: rgb(145, 133, 145);
+background-color: rgb(253, 250, 253);
 width:0;
 height: 3px;
 display:block;
@@ -55,7 +67,7 @@ margin: 10px  auto;
 }
 .nav-gauche a::before {
     content:"";
-    background-color:rgb(145, 133, 145);
+    background-color:rgb(248, 246, 248);
     width: 0;
     height:3px;
     display: block;
@@ -76,7 +88,7 @@ margin: 10px  auto;
 
 /************************ HOME SECTION **********************/
 .accueil {
-    background-image:url('../img/back.jpeg');
+    background-image:url('../img/twit1.jpg');
     /* background: url(ressources/accueil.jpg); */
     background-repeat:no-repeat;
     background-size: cover;
@@ -96,25 +108,30 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     margin:60px;
     padding-top: 210px;
-
-  
+    
+    color: #f7f4f4;
+    
 }
 .txt-animation {
     font-size: 30px;
     margin: 10px 0 10px 60px;
+    font-family: 'Acme', sans-serif;
+font-family: 'Pacifico', cursive;
+
 }
 .btn-acc {
     display: inline-flex;
     width: 200px;
     height: 50px;
     text-decoration: none;
-    background: #000;
+    background: rgb(20, 20, 20);
     justify-content: center;
     align-items: center;
     color: #f1f1f1;
     margin: 10px 0 0 0;
     border-radius: 2px;
     font-size: 18px;
+    
 }
 .btn-acc1 {
     margin: 10px 0 0 60px;
