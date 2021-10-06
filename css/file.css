@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 *, ::before, ::after {
     box-sizing: border-box;
     margin:0;
@@ -17,15 +21,15 @@ body {
 
 .burger{
 
-    position: relative;
+    position:fixed;
     width:70px;
     height:70px;
-    background-color: red;
+    background-color: rgb(41, 105, 44);
     border-radius: 50%;
     box-shadow: 5px 5px 30px 5px #000000;
     top:10px;
     left:10px;
-    z-index: 10px;
+    z-index: 2;
   
 }
 
@@ -34,7 +38,7 @@ body {
     position: absolute;
     width:50%;
     height:2px;
-    background-color: yellow;
+    background-color: rgb(247, 247, 240);
     top:50%;
     left:25%;
    
@@ -49,7 +53,7 @@ body {
     position: absolute;
     width:50%;
     height:2px;
-    background-color: yellow;
+    background-color: rgb(245, 245, 235);
     top:9px;
     left:25%;
 
@@ -61,7 +65,7 @@ body {
     position: absolute;
     width:50%;
     height:2px;
-    background-color: yellow;
+    background-color: rgb(245, 245, 240);
     bottom:9px;
     left:25%;
 }
@@ -74,22 +78,24 @@ body {
     
     width: 300px;
     height: 100vh;
-    min-height: 860px;
+  
     background: rgb(5, 5, 5);
     position:fixed;
     top:0;
-    left:0;
+    
     display:flex;
     flex-direction:column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items:center; 
     align-content:space-between;
-    z-index:-1;
+    z-index:1;
     transition: all 0.2s ease-in-out;
     font-family:  sans-serif;
-    /* left: -300px;  */
+  /* left: -300px;  */
     
 }
+
+
 .nav-gauche  img {
     width: 70px;
     height: 70px;
@@ -103,6 +109,9 @@ body {
     color:#2D5C2A;
     font-family: 'Acme', sans-serif;
 
+}
+i{
+    font-size: 40px;
 }
 
 .nav-menu-item a::after {
@@ -131,12 +140,6 @@ margin: 10px  auto;
     width: 100%;
 
 }
-
-
-
-
-
-
 .cercle-portrait img{
 
     width: 100px;
@@ -170,13 +173,13 @@ h1 {
     color: #f7f4f4;
     
 }
-.txt-animation {
+ .txt-animation {
     font-size: 30px;
     margin: 10px 0 10px 60px;
-    font-family: 'Acme', sans-serif;
-font-family: 'Pacifico', cursive;
+    
+    font-family: 'Yaldevi', sans-serif;
 
-}
+} 
 .btn-acc {
     display: inline-flex;
     width: 200px;
@@ -249,3 +252,91 @@ font-family: 'Pacifico', cursive;
 .logo-btn-rond-acc {
     width: 35px;
 }
+/* section presentation */
+
+.presentation{
+    width:calc(300%-100%);
+    height: 700px;
+    margin-left:310px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+  
+    margin-top: 60px;
+    align-items: center;
+    align-content: flex-start;
+  
+
+ 
+}
+.container-presentation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+  
+
+
+}
+
+#circle{
+
+    background-color: blue;
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.title-1{
+    color: rgb(34, 73, 34);
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    size: 200px;
+  
+    margin-bottom: 60px;
+    
+}
+.pres-gauche {
+    color: rgb(13, 13, 14);
+    font-family: 'Questrial', sans-serif;
+    width: 40%;
+    
+    
+
+}
+
+hr{
+    width:90%;
+    height: 3px;
+    color: #000;
+}
+
+
+.pres-droite{
+    color: rgb(10, 10, 10);
+    width: 40%;
+    font-family: 'Questrial', sans-serif;
+}
+
+
+.pres-droite ul li{
+
+    text-decoration: none;
+    list-style: none;
+    color: rgb(11, 12, 11);
+}
+
+.fond-form{
+
+    background-image: linear-gradient(to right, #66FCF1, #45A29E);
+    width: 2300px;
+    height:1000px;
+    position: absolute;
+    transform: rotate(-45deg) translateX(100px) translateY(-15px);
+    z-index: -1;
+   
+   }

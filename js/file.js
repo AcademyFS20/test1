@@ -7,7 +7,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .pauseFor(250)
+  .pauseFor(400)
   .typeString('I am MERYEM ESSM,a developer')
   .pauseFor(300)
   .deleteChars(11)
@@ -17,6 +17,31 @@ typewriter
   .start();
 
 
+
+
+
+
+
+
+  
+
+//           // Create the query list.
+// const mediaQueryList = window.matchMedia("(orientation: portrait)");
+
+// // Define a callback function for the event listener.
+// function handleOrientationChange(mql) {
+//   // ...
+// }
+
+// // Run the orientation change handler once.
+// handleOrientationChange(mediaQueryList);
+
+// // Add the callback function as a listener to the query list.
+// mediaQueryList.addEventListener('change', handleOrientationChange);
+        
+        
+
+                
 
 
 
